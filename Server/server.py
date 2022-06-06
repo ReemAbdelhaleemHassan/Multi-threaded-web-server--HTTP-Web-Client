@@ -157,7 +157,7 @@ def threaded(c):
     inc_dec_lock.release()
     print("--------------------------------------------------------------------------------------------------")
     print("--------------------------------------------------------------------------------------------------")
-    print_lock.release()
+    #print_lock.release()
 
 
 def Main():
@@ -176,7 +176,7 @@ def Main():
 
         c, addr = s.accept()
 
-        print_lock.acquire()
+        #print_lock.acquire()
 
         print('Connected to :', addr[0], ':', addr[1])
 
